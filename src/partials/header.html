@@ -1,19 +1,37 @@
 <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="./#home" class="logo">
+      <span class="logo__text">Gamma-Com</span>
+    </a>
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="./#home" class="nav__link">Главная</a></li>
+        <li><a href="./#about" class="nav__link">О платформе</a></li>
+        <li><a href="./#features" class="nav__link">Возможности</a></li>
+        <li><a href="./#tech" class="nav__link">Технологии</a></li>
+        <li><a href="./#education" class="nav__link">Обучение</a></li>
       </ul>
     </nav>
+    <div class="header__actions">
+      <a href="./#contact" class="btn btn--outline">Связаться</a>
+      <button class="burger" aria-label="Menu">
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-menu__close" id="menu-close">
+    <i data-lucide="x"></i>
+  </button>
+  <nav class="mobile-menu__nav">
+    <ul>
+      <li><a href="./#home">Главная</a></li>
+      <li><a href="./#about">О платформе</a></li>
+      <li><a href="./#features">Возможности</a></li>
+      <li><a href="./#tech">Технологии</a></li>
+      <li><a href="./#education">Обучение</a></li>
+      <li><a href="./#contact" class="btn btn--primary">Связаться</a></li>
+    </ul>
+  </nav>
+</div>
