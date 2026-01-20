@@ -1264,3 +1264,46 @@ h4,
     text-wrap: balance;
     /* Равномерно распределяет слова по строкам */
 }
+/* СТИЛИ ДЛЯ СТРАНИЦ PAGES */
+.pages {
+    padding: 160px 0 100px;
+    line-height: 1.8;
+}
+
+.pages h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pages h2 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    margin: 40px 0 20px;
+    color: var(--color-primary);
+}
+
+.pages p {
+    color: var(--color-text-dim);
+    margin-bottom: 20px;
+}
+
+.pages ul {
+    margin-bottom: 30px;
+    list-style: disc;
+    padding-left: 20px;
+    color: var(--color-text-dim);
+}
+
+.pages ul li {
+    margin-bottom: 10px;
+}
+.pages h1,
+.pages h2 {
+    hyphens: none;
+    word-break: keep-all;
+    overflow-wrap: normal;
+}
